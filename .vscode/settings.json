@@ -1,4 +1,19 @@
 {
+    "window.zoomLevel": 1,
     "git.confirmSync": false,
     "git.enableSmartCommit": true
+    "editor.minimap.enabled": false
+    "editor.renderWhitespace": "trailing"
+    "editor.linkedEditing": true
+    "editor.suggest.insertMode": "replace"
+    "files.autoSave": "onFocusChange"
+    "workbench.tree.indent":15
+    "workbench.editor.enablePreview":false
+    "editor.fontSize": 14
+    "material-icon-theme.hidesExplorerArrows":false,
+    "
+
+
+   
+
 }

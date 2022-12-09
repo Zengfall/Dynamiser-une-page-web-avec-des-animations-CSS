@@ -67,17 +67,116 @@ body {
       background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
     }
    }
-   #Fonctionnement{
-    background-color: white;
+   h2{
+    padding-left: 5%;
+    font-family: $font-stack;
    }
-    
-    
-
    
-     
-     
-       .card__images{
-      width: 100px;
-     }
+   .Fonctionnement{
+    background-color: white;
+    margin-right: 20px;
+    .option{
+      list-style:none;
+      padding-top: 10px;
+      counter-reset: compteListe;}
+    .option li{
+      font-size: 22px;
+      padding-left: 15px;
+      padding-top: 20px;
+      border: solid rgba(250, 250, 250, 0.7294117647);
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+      border-radius: 18px;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+      background-color: rgba(250, 250, 250, 0.7294117647);
+}
+.option li::before{
   
-  
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -0.75rem;
+    margin-left: 40px;
+    margin-top: 1px;
+}
+}
+    .option i{
+      color: #8c9391;
+      padding-left: 10px;
+    }
+    .option a{
+      padding-left: 15px;
+      text-decoration-line: none;
+      color: black;
+      font-size: 18px
+    }
+   
+    #Restaurants{
+      background-color: rgba(250, 250, 250, 0.7294117647);
+      padding-top: 30px;
+    }
+    #cards{
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 5%;
+    .card{
+    background-color: #fff;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    .card a{
+      margin-bottom: -20px;
+    }
+    .card__images{
+        height: 12rem;
+        width: 100%;
+        border: 0 solid transparent;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: none;
+        object-fit: cover;
+    }
+    .card__new{
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 0.5rem;
+    margin-top: 10px;
+    border-radius: 0.125rem;
+    position: absolute;
+    right: 0.75rem;
+    }
+    }
+    .card__footer{
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: -30px;
+    .card__content{
+      margin-top: -25px;
+      .card__nom{
+        font-size: j20px;
+        WIDTH: 200px;
+        margin-top: -10px;
+      }
+     .card__localisation{
+      margin-top: -10px;
+      font-size: 20px;
+     }}
+    }
+    .card__btn{
+    font-size: 25px;
+    height: 80px;
+    padding-left: 20%;
+    }}

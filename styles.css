@@ -71,16 +71,16 @@ h2 {
   font-family: Shrikhand, sans-serif;
 }
 
-#Fonctionnement__option {
+.Fonctionnement {
   background-color: white;
   margin-right: 20px;
 }
-#Fonctionnement__option .option {
+.Fonctionnement .option {
   list-style: none;
   padding-top: 10px;
   counter-reset: compteListe;
 }
-#Fonctionnement__option .option li {
+.Fonctionnement .option li {
   font-size: 22px;
   padding-left: 15px;
   padding-top: 20px;
@@ -91,7 +91,7 @@ h2 {
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   background-color: rgba(250, 250, 250, 0.7294117647);
 }
-#Fonctionnement__option .option li::before {
+.Fonctionnement .option li::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: #9356dc;

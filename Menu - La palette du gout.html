@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <!-- Indique comment le navigateur doit afficher la page sur différents appareils mobiles -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./menu.css" />
     <title>La palette du goût</title>
     <!--Police-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,13 +28,13 @@
   <body>
     <!--Entête-->
     <header>
-      <div id="titre_principal">
+      <div id="header">
         <!--Logo clicable -->
-        <div class="logo">
+        <div class="header__logo">
           <div>
             <!--Lien qui renvoie à l'accueil de la page-->
             <a href="Accueil.html"
-              ><img
+              ><img class="header__img"
                 id="logo"
                 src="./images/logo/ohmyfood.png"
                 alt="Logo Ohmyfood"
@@ -42,122 +42,123 @@
             /></a>
           </div>
         </div>
-        <div id="Boutoun_retour">
-          <FORM id="bouton">   
-            <a href="Accueil.html"class="bouton"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>  
-            </FORM>
+        <div class="header__btn">
+            <a href="Accueil.html"class="bouton"><i class="header__icon fa-sharp fa-solid fa-arrow-left"></i></a>
         </div>
-      </div>
-    </header>
-  </body>
+    </header>  
   <main>
-    <div id="Image">
-      <img id="fond"
-      src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-      alt="Image_de_fond"
-      title="La palette du goût">
-    </div>
-    <section id="La_palette_du_goût">
-    <div id="entête">
-      <h1>La palette  du goût</h1>
-      <i class="fa-regular fa-heart"></i>
-     </div>
-     <div id="Entrees">
-      <div id="Titre">
-        <p>ENTREES</p>
-      </div>
-      <div class="titre_prix_du_menu">
-        <div class="titre_du_menu">Fricassée d'escargot</div>
-        <div class="prix_du_menu">
+    <img class="entreeImg" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+    <!--Menus à la carte-->
+    <section class="menu" id="La_palette_du_goût">
+      <div class="menu__header" id="entête">
+        <h1 class="menu__titre">La palette  du goût</h1>
+          <i class="menu__icon fa-regular fa-heart"></i>
+      </div>  
+    <div class="type">   
+          <p class="type__titre">ENTREES</p>     
+
+      <div class="type__items">
+        <h4 class="type__nom">Fricassée d'escargot</h4>
+        <div class="type__prix">
           Au piment d'espelette <i class="bold">25€</i>
         </div>
       </div>
-      <div class="titre_prix_du_menu">
-        <div class="titre_du_menu">Foie gras de canrd mi-cuit</div>
-        <div class="prix_du_menu">
+
+      <div class="type__items">
+        <h4 class="type__nom">Foie gras de canrd mi-cuit</h4>
+        <div class="type__prix">
           Et ses copeaux de truffe noire<i class="bold">35€</i>
         </div>
       </div>
-      <div class="titre_prix_du_menu">
-        <div class="titre_du_menu">Œuf au plat</div>
-        <div class="prix_du_menu">
+
+      <div class="type__items">
+        <h4 class="type__nom">Œuf au plat</h4>
+        <div class="type__prix">
          Assaisonné à la truffe sur lit de... <i class="bold">20€</i>
         </div>
       </div>
-        <div id="Plats">
-          <div id="Titre">
-            <p>PLATS</p>
-          </div>
-          <div class="titre_prix_du_menu">
-            <div class="titre_du_menu">Filet de bœuf aux herbes</div>
-            <div class="prix_du_menu">
+      <!--Plats-->
+        
+          
+          <p class="type__titre" id="first-child">PLATS</p>
+          
+
+          <div class="type__items">
+            <h4 class="type__nom">Filet de bœuf aux herbes</h4>
+            <div class="type__prix">
               Accompagnée de sa ribambelle de légu... <i class="bold">40€</i>
             </div>
           </div>
-          <div class="titre_prix_du_menu">
-            <div class="titre_du_menu">Parmentier de queue de bœuf</div>
-            <div class="prix_du_menu">
+
+          <div class="type__items">
+            <h4 class="type__nom">Parmentier de queue de bœuf</h4>
+            <div class="type__prix">
               À la truffe sur sa purée de panais <i class="bold">35€</i>
             </div>
           </div>
-          <div class="titre_prix_du_menu">
-            <div class="titre_du_menu">Filet de turbo</div>
-            <div class="prix_du_menu">
+
+          <div class="type__items">
+            <h4 class="type__nom">Filet de turbo</h4>
+            <div class="type__prix">
               Aux agrumes <i class="bold">44€</i>
-            </div>
           </div>
-            <div id="Desserts">
-              <div id="Titre">
-                <p>DESSERTS</p>
-              </div>
-              <div class="titre_prix_du_menu">
-                <div class="titre_du_menu">Paris-Brest</div>
-                <div class="prix_du_menu">
+          </div>
+        
+          <!--Desserts-->
+       
+             
+          <p class="type__titre">DESSERTS</p>
+              
+
+              <div class="type__items">
+                <h4 class="type__nom">Paris-Brest</h4>
+                <div class="type__prix">
                   Revisité<i class="bold">18€</i>
                 </div>
               </div>
-              <div class="titre_prix_du_menu">
-                <div class="titre_du_menu">Macaron au chocolat d'exception</div>
-                <div class="prix_du_menu">
+
+              <div class="type__items">
+                <h4 class="type__nom">Macaron au chocolat d'exception</h4>
+                <div class="type__prix">
                   Et glace à la vanille de Madagascar <i class="bold">22€</i>
                 </div>
               </div>
-              <div class="titre_prix_du_menu">
-                <div class="titre_du_menu">Mousse au chocolat </div>
-                <div class="prix_du_menu">
+
+              <div class="type__items">
+                <h4 class="type__nom">Mousse au chocolat </h4>
+                <div class="type__prix">
                   Au piment d'Espellette et à la truffe noire<i class="bold">23€</i>
                 </div>
-      </div>
-     </div>
-     <div id="boutoun">
-      <FORM id="bouton">   
-        <a href="#"class="bouton">Commander</a>  
-        </FORM>
-     </div>
-    </section>
+              </div>
+          </div>
+     <!--Commande-->
+     <div class="btn">
+      <button class="Commander">Commander</button>
+    </div>
+    </div>
+  </section>
   </main>
+  <!--Pieds de page-->
   <footer>
-    <section id="Pieds_de_page">
-      <div id="Signature">
-        <a href="Accueil.html">Ohmyfood</a>
-      </div>
-      <div id="Items">
-        <ul>
-          <li class="Liens_footer">
-            <a href="#">Proposer un restaurant</a>
+    <section class="footer">
+      <div class="container">
+        <span class="footer__logo" href="Accueil.html">Ohmyfood</span>
+        <ul class="Items">
+          <li class="footer__items">
+            <a class="footer__liens" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
           </li>
-          <li class="Liens_footer">
-            <a href="#">Devenir un partenaire</a>
+          <li class="footer__items">
+            <a class="footer__liens" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir un partenaire</a>
+          </li>
+          <li class="footer__items">
+            <a class="footer__liens" href="#">Mentions legales</a>
+          </li>
+          <li class="footer__items">              
+              <a class="footer__liens" href="mailto:ohmyfood@outlook.fr?subject=Demande d'informations"class="bouton">Contact</a>  
           </li>
         </ul>
-        <div id="Contacts_et_mentions legales">
-          <p>Mentions légales</p>
-        </div>
-          <div class="Email">
-            <FORM id="bouton">   
-              <a href="mailto:ohmyfood@outlook.fr?subject=Demande d'informations"class="bouton">Contact</a>  
-              </FORM>
-           </div>
-      </section>
+      </div>
+    </section>
   </footer>
+</body>
 </html>

@@ -188,6 +188,45 @@ h2 {
   padding-left: 20%;
 }
 
-.pieds_de_page {
-  color: #99E2D0;
-}/*# sourceMappingURL=style.css.map */
+.footer {
+  background-color: #353535;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.footer .footer__logo {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+.footer .Items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .footer__items {
+  margin: 0.5rem 0;
+  font-size: 19px;
+}
+.footer .footer__items:first-child {
+  margin-top: 0;
+}
+.footer .footer__items:last-child {
+  margin-bottom: 0;
+}
+.footer .footer__liens {
+  color: white;
+  text-decoration: none;
+}
+.footer .footer__liens:hover {
+  text-decoration: underline;
+}
+.footer .footer__icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=homepage.css.map */

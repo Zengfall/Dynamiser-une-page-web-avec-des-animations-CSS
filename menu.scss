@@ -4,7 +4,7 @@ $primary-color:#9356DC ;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
 body {
-    font-family: "Shrikhand" "Roboto", sans-serif;
+    font-family: "Shrikhand", "Roboto", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -52,13 +52,15 @@ body {
     &__titre{
         font-size: 18px;
     }
-    .type__prix{
+    .type__carac{
         margin-top: -5px;
-        .bold{
-            font-weight:bold ;
-            padding-left: 5px;
-        }
+        font-size: 14px;
     }
+    .type__prix{
+    font-weight: bold;
+    padding-left: 260px;
+    margin-top: -19px;
+  }
     .type__nom{
         font-size: 18px;
         margin-bottom: 10px;

@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  min-width: 320px;
+  min-width: 357px;
   max-width: 768px;
   overflow-x: hidden;
 }
@@ -20,11 +20,23 @@ header .header__img {
   padding-top: 10%;
   padding-left: 18%;
 }
+@media (min-width: 993px) {
+  header .header__img {
+    width: 100%;
+    margin-left: 55%;
+  }
+}
 
 #loc {
   display: flex;
   padding-left: 65px;
   background-color: #f3f3f3;
+}
+@media (min-width: 993px) {
+  #loc {
+    width: 200%;
+    padding-left: 80%;
+  }
 }
 #loc .loc__icon {
   font-size: 30px;
@@ -41,6 +53,11 @@ header .header__img {
   text-align: center;
   background-color: rgba(250, 250, 250, 0.7294117647);
 }
+@media (min-width: 993px) {
+  #Presentation {
+    width: 200%;
+  }
+}
 #Presentation .Presentation__texte {
   display: block;
   font-family: Shrikhand, sans-serif;
@@ -50,9 +67,23 @@ header .header__img {
   margin: 0;
   text-align: center;
 }
+@media (min-width: 993px) {
+  #Presentation .Presentation__texte {
+    font-size: 45px;
+    margin-left: -15%;
+    margin-top: -5%;
+  }
+}
 #Presentation .Presentation__soustitre {
   width: 310px;
   font-size: 20px;
+}
+@media (min-width: 993px) {
+  #Presentation .Presentation__soustitre {
+    font-size: 30px;
+    padding-left: 32.5%;
+    margin-top: -3%;
+  }
 }
 #Presentation .Presentation__btn {
   background-color: #9356DC;
@@ -65,6 +96,11 @@ header .header__img {
   border: #9356DC;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
+@media (min-width: 993px) {
+  #Presentation .Presentation__btn {
+    margin-left: -15%;
+  }
+}
 
 h2 {
   padding-left: 5%;
@@ -75,12 +111,19 @@ h2 {
   background-color: white;
   margin-right: 20px;
 }
-.Fonctionnement .option {
+@media (min-width: 993px) {
+  .Fonctionnement .Fonctionnement__titre {
+    padding-left: 78%;
+  }
+}
+
+.option {
   list-style: none;
   padding-top: 10px;
   counter-reset: compteListe;
 }
-.Fonctionnement .option li {
+
+.option li {
   font-size: 22px;
   padding-left: 15px;
   padding-top: 20px;
@@ -91,7 +134,16 @@ h2 {
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   background-color: rgba(250, 250, 250, 0.7294117647);
 }
-.Fonctionnement .option li::before {
+@media (min-width: 993px) {
+  .option li {
+    width: 31%;
+    padding-left: 0%;
+    margin-right: 60%;
+    margin-left: 535px;
+  }
+}
+
+.option li::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: #9356dc;
@@ -106,6 +158,11 @@ h2 {
   left: -0.75rem;
   margin-left: 40px;
   margin-top: 1px;
+}
+@media (min-width: 993px) {
+  .option li::before {
+    margin-left: 570px;
+  }
 }
 
 .option i {
@@ -125,6 +182,17 @@ h2 {
   background-color: rgba(250, 250, 250, 0.7294117647);
   padding-top: 30px;
 }
+@media (min-width: 993px) {
+  #Restaurants {
+    width: 200%;
+  }
+}
+
+@media (min-width: 993px) {
+  #Restaurant__titre {
+    padding-left: 37%;
+  }
+}
 
 #cards {
   display: flex;
@@ -133,6 +201,13 @@ h2 {
        column-gap: 2rem;
   row-gap: 2rem;
   padding: 5%;
+}
+@media (min-width: 993px) {
+  #cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 #cards .card {
   background-color: #fff;
@@ -187,9 +262,19 @@ h2 {
   height: 80px;
   padding-left: 20%;
 }
+@media (min-width: 993px) {
+  #cards .card__btn {
+    padding-left: 1%;
+  }
+}
 
 .footer {
   background-color: #353535;
+}
+@media (min-width: 993px) {
+  .footer {
+    width: 200%;
+  }
 }
 .footer .container {
   display: flex;
@@ -209,12 +294,28 @@ h2 {
   padding: 0;
   margin: 0;
 }
+@media (min-width: 993px) {
+  .footer .Items {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .footer .footer__items {
   margin: 0.5rem 0;
   font-size: 19px;
 }
+@media (min-width: 993px) {
+  .footer .footer__items {
+    padding-right: 15%;
+  }
+}
 .footer .footer__items:first-child {
   margin-top: 0;
+}
+@media (min-width: 993px) {
+  .footer .footer__items:first-child {
+    margin-top: 10px;
+  }
 }
 .footer .footer__items:last-child {
   margin-bottom: 0;

@@ -353,17 +353,17 @@ h2 {
   margin-right: 0.5rem;
 }
 
-.loader {
+.loading {
   position: fixed;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-animation: loader 0.01s;
-          animation: loader 0.01s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  background-color: rgba(244, 235, 235, 0.9);
+  -webkit-animation: loading 0.1s;
+          animation: loading 0.1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   z-index: 10000;
@@ -371,42 +371,42 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-.loader__item {
-  height: 1rem;
-  width: 1rem;
-  border-radius: 1rem;
+.loading__item {
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
   -webkit-animation: jump 1s;
           animation: jump 1s;
   -webkit-animation-iteration-count: 3;
           animation-iteration-count: 3;
 }
-.loader__itemContainer {
+.loading__itemContainer {
   display: flex;
-  width: 5rem;
+  width: 80px;
   justify-content: space-between;
 }
-.loader__item--1 {
+.loading__item--1 {
   background-color: #9356DC;
 }
-.loader__item--2 {
+.loading__item--2 {
   background-color: #FF79DA;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
 }
-.loader__item--3 {
+.loading__item--3 {
   background-color: #99E2D0;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-@-webkit-keyframes loader {
+@-webkit-keyframes loading {
   100% {
     opacity: 0;
     z-index: -10;
   }
 }
 
-@keyframes loader {
+@keyframes loading {
   100% {
     opacity: 0;
     z-index: -10;

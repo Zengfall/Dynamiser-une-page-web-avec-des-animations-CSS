@@ -70,6 +70,14 @@ body {
       }
     }
   }
+  @keyframes itemAppear {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
   .typeitem {
     background-color: white;
     padding: 1rem;
@@ -79,20 +87,80 @@ body {
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
-    animation: itemAppear .6s;
+    animation: itemAppear .8s;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
-    transform: scale(0);
+    transform: scale(1);
     max-width: 100%;
-
+  
     &__header {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       flex: 1;
+      flex-direction: column;
     }
-    
+    &__nom {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  
+    &__carac {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &__prix {
+      font-weight: 900;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-left: 0.5rem;
+    }
+  
+    &__confirmation {
+      background-color: $tertiary-color;
+      margin: -1rem -5rem -1rem 1rem;
+      width: 4rem;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition-duration: 0.5s;
+    }
+    &:hover &__confirmation {
+      margin-right: -1rem;
+    }
+  
+    &__checkIcon {
+      height: 1.6rem;
+      width: 1.6rem;
+      background-color: white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius: 100px;
+      transform: rotate(180deg);
+      transition-duration: 0.5s;
+  
+    }
+  
+    &:hover &__checkIcon {
+      transform: rotate(0);
+    }
+    &__icon {
+      color: $tertiary-color;
+    }
   }
+  
+  @for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay:  #{$i/10}s;
+    }
+  }
+  
   .menu{margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;

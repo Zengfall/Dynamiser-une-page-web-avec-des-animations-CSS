@@ -277,6 +277,7 @@ h2 {
   position: relative;
   font-size: 30px;
   top: -20px;
+  right: -40px;
 }
 
 .fa-heart:hover {

@@ -182,16 +182,20 @@ body {
         padding-left: 37%;
      }}
     #cards{
-    display: flex;
-    flex-direction: column;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    padding: 5%;
-    @media (min-width:993px){
-      display: flex;
-      flex-direction:row; 
-      flex-wrap: wrap;
-    }
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 2rem;
+      row-gap: 2rem;
+      padding: 2%;
+    
+      @media (min-width:64rem) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        padding-left: 4%;
+      }}
+      
+
+    
     .card{
     background-color: #fff;
     border-radius: 1rem;
@@ -247,7 +251,7 @@ body {
     position: relative;
     font-size: 30px;
     top: -20px;
-    right: -40px;}}
+    right: -40px;}
     .fa-heart:hover {
       background: linear-gradient(to bottom,#9356dc, #ff79da);
       background-clip: text;

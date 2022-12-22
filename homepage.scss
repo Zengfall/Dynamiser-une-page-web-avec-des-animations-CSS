@@ -130,6 +130,7 @@ body {
       &:hover {
         background-color:rgb(147, 182, 235);
         box-shadow: 0.25rem 0.25rem 10px #e7c9ec(0, 0, 0, 0.50);
+        cursor: pointer;
       }
       @media (min-width:993px){
         width: 31%;
@@ -280,8 +281,7 @@ body {
         margin: 0;
         font-size: 1.2rem;
         margin-bottom: 1rem;
-        font-size: 22px
-      }
+        font-size: 22px;}
     
       .Items {
         list-style: none;

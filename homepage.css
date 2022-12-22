@@ -144,6 +144,7 @@ h2 {
 .option li:hover {
   background-color: rgb(147, 182, 235);
   box-shadow: 0.25rem 0.25rem 10px #e7c9ec 0, 0, 0, 0.5;
+  cursor: pointer;
 }
 @media (min-width: 993px) {
   .option li {

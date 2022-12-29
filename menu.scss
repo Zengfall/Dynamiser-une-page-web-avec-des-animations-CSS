@@ -10,19 +10,25 @@ body {
     padding: 0;
     min-width: 320px;
     max-width: 768px;
-    overflow-x: hidden;
-  
+    overflow-x: hidden;  
   }
   header{
     display: flex;
     justify-content: center;
     flex-direction: row;
     width: 100%;
+    @media (min-width:993px){
+      margin-bottom: 1%;
+      width: 200%;
+    }
    .header__logo{
     width: 50%;
     padding-top: 10%;
     padding-left: 45%;
     margin:-5% 0% -18% 5%;
+    @media (min-width:768px){
+      margin-bottom: -10%;
+    }
     .header__img{
         width: 100%;
         margin-left: -44%;
@@ -34,12 +40,22 @@ body {
     padding-left: 7%;
     padding-bottom: 7%;
     margin-top: -15%;
+    @media (min-width:993px){
+      margin-bottom: 1%;
+    }
     .header__icon{
         color: black;
         padding-top: 17px;
         font-size: 25px;
     }
    }
+  }
+  .imagefond{
+    @media (min-width:993px){
+      width: 176%;
+      margin-top: 3%;
+      
+      }
   }
   .entreeImg{
   max-width: 100%;
@@ -48,11 +64,60 @@ body {
   margin-top: -3%;
   object-fit: cover;
   }
+  .menu{margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+    padding-right: 10px;
+    @media (min-width:993px){
+      width: 175%;
+      margin-right: -120px;
+     
+      
+  
+      
+      }
+    &__header {
+      padding: 1rem 2rem 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__titre{
+      font-family: "Shrikhand", "cursive";
+      font-size: 34px;
+      font-style: oblique;
+      font-weight: bold;
+    }
+    .menu__icon{
+      font-size: 25px;
+    }
+    .fa-heart:hover {
+      background: linear-gradient(to bottom,#9356dc, #ff79da);
+      background-clip: text;
+      color: transparent;
+      -webkit-background-clip: text;
+      transition: all 2.5s ease;
+      font-weight: 900;
+      transform-origin: bottom;
+    }
+  }
+  .btn {
+      display: flex;
+      text-decoration: none;
+      justify-content: center;
+      padding: 3rem 0;
+    }
   .type {
     max-width: 100%;
     overflow: hidden;
-    padding: 0 1rem;
-  
+    padding: 0 2rem;
+    @media (min-width:64rem) {
+      display: flex;
+      column-gap: 4rem;
+     }
+
     &__titre {
       text-transform: uppercase;
       position: relative;
@@ -77,6 +142,7 @@ body {
     100% {
       transform: scale(1);
     }
+   
   }
   .typeitem {
     background-color: white;
@@ -90,9 +156,8 @@ body {
     animation: itemAppear .8s;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
-    transform: scale(1);
+    transform: scale(0);
     max-width: 100%;
-  
     &__header {
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -154,49 +219,15 @@ body {
       color: $tertiary-color;
     }
   }
-  
-  @for $i from 0 to 9 {
-    .delay-#{$i} {
-      animation-delay:  #{$i/10}s;
+  .sous_type{
+    @media (min-width:64rem) {
+     width: 30%;
     }
   }
-  
-  .menu{margin-top: -4rem;
-  border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
-  z-index: 1;
-  position: relative;
-  padding-right: 10px;
-  &__header {
-    padding: 1rem 2rem 0 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__titre{
-    font-family: "Shrikhand", "cursive";
-    font-size: 34px;
-    font-style: oblique;
-    font-weight: bold;
-  }
-  .menu__icon{
-    font-size: 25px;
-  }
-  .fa-heart:hover {
-    background: linear-gradient(to bottom,#9356dc, #ff79da);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    transition: all 2.5s ease;
-    font-weight: 900;
-    transform-origin: bottom;
-  }
-}
-.btn {
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    padding: 3rem 0;
+  @for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay:  #{$i/9}s;
+    }
   }
 .Commander{
       background-color: $primary-color;
@@ -215,11 +246,14 @@ body {
         background-color: white;
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);}
       @media (min-width:993px){
-        margin-left: -15%;
+        padding-right: -10%;
       }
   }
-.footer{
+  .footer{
     background-color: #353535;
+    @media (min-width:993px){
+      width:176%;
+      }
     .container {
       display: flex;
       flex-direction: column;
@@ -231,36 +265,54 @@ body {
       margin: 0;
       font-size: 1.2rem;
       margin-bottom: 1rem;
-      font-size: 22px
-    }
+      font-size: 22px;}
   
-    .Items {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .footer__items {
-      margin: 0.5rem 0;
-      font-size: 19px;
-  
-      &:first-child {
-        margin-top: 0;
+      .Items {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @media (min-width:993px){
+          display: flex;
+          flex-direction: row;
+          margin-right: -400px;
+        
+          }
       }
-  
-      &:last-child {
-        margin-bottom: 0;
+    
+      .footer__items {
+        margin: 0.5rem 0;
+        font-size: 19px;
+        @media (min-width:993px){
+          padding-right: 12%;
+        
+          }
+    
+        &:first-child {
+          margin-top: 0;
+          @media (min-width:993px){
+            margin-top: 10px;
+            }
+        }
+    
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
-    }
-  
-    .footer__liens {
-      color: white;
-      text-decoration: none;
-  
-      &:hover {
-        text-decoration: underline;
+    
+      .footer__liens {
+        color: white;
+        text-decoration: none;
+        
+    
+        &:hover {
+          text-decoration: none;
+        }
       }
-    }
+      .footer__icon {
+        width: 1.2rem;
+        margin-right: 0.5rem;
+      }
+    
     .footer__icon {
       width: 1.2rem;
       margin-right: 0.5rem;

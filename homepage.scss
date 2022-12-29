@@ -35,17 +35,20 @@ body {
     background-color: #f3f3f3;
     @media (min-width:993px){
       width: 200%;
-      padding-left: 80%;
+      padding-left: 10%;
       }
     .loc__icon{
     font-size: 30px;
     padding-top: 13px;
+    @media (min-width:768px){
+      margin-left: 30%;
+    }
     }
     .loc__text{
     font-size: 22px;
     font-weight: 300;
-    padding-left: 25px;
-    }
+    padding-left: 25px;  
+  }
    }
    #Presentation{
     padding: 2rem;
@@ -73,9 +76,11 @@ body {
     font-size: 20px;
     @media (min-width:993px){
       font-size: 30px;
-      padding-left: 32.5%;
-      margin-top: -3%;
-      
+      padding-left: 3%;
+      margin-top: -3%;   
+    }
+    @media (min-width:768px){
+      margin-left: 29%;
     }
     }
     .Presentation__btn{
@@ -252,7 +257,10 @@ body {
     position: relative;
     font-size: 30px;
     top: -20px;
-    right: -40px;}
+    right: -40px;
+    @media (min-width:768px){
+      margin-left: 50%;
+    }}
     .fa-heart:hover {
       background: linear-gradient(to bottom,#9356dc, #ff79da);
       background-clip: text;

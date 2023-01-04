@@ -305,7 +305,7 @@ header .header__btn .header__icon {
 }
 @media (min-width: 993px) {
   .Commander {
-    padding-right: -10%;
+    margin-right: -10%;
   }
 }
 

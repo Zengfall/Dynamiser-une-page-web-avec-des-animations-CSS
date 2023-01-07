@@ -194,7 +194,7 @@ body {
       row-gap: 2rem;
       padding: 2%;
     
-      @media (min-width:64rem) {
+      @media (min-width:993px) {
         grid-template-columns: repeat(2, 1fr);
         width: 80%;
         padding-left: 4%;

@@ -86,7 +86,7 @@ header .header__img {
 }
 @media (min-width: 993px) {
   #Presentation .Presentation__soustitre {
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 3%;
     margin-top: -3%;
   }
@@ -356,7 +356,7 @@ h2 {
 }
 @media (min-width: 993px) {
   .footer .footer__items {
-    padding-right: 15%;
+    padding-right: 14%;
   }
 }
 .footer .footer__items:first-child {

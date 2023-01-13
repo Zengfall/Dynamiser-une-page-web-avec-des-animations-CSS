@@ -48,6 +48,7 @@ body {
     font-size: 22px;
     font-weight: 300;
     padding-left: 25px;  
+    font-family: $font-texte;
   }
    }
    #Presentation{
@@ -73,8 +74,9 @@ body {
     }
     .Presentation__soustitre{
     width: 310px;
-    font-size: 20px;
+    font-size: 17px;
     font-family: $font-texte;
+
     @media (min-width:993px){
       font-size: 30px;
       padding-left: 3%;
@@ -106,7 +108,7 @@ body {
       }
    }
    h2{
-    padding-left: 5%;
+    padding-left: 8%;
     font-family: $font-stack;
   }
    .Fonctionnement{
@@ -176,6 +178,9 @@ body {
       text-decoration-line: none;
       color: black;
       font-size: 18px;
+      @media (min-width:993px){
+        font-size: 16px;
+      }
     }
    
     #Restaurants{

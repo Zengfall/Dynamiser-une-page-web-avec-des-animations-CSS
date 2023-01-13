@@ -84,7 +84,7 @@ body {
       font-family: "Shrikhand", "cursive";
       font-size: 34px;
       font-style: oblique;
-      font-weight: bold;
+      font-weight: 1000;
     }
     .menu__icon{
       font-size: 25px;
@@ -108,7 +108,7 @@ body {
   .type {
     max-width: 100%;
     overflow: hidden;
-    padding: 0 32px;
+    padding: 0 15px;
     @media (min-width:993px) {
       display: flex;
       column-gap: 64px;
